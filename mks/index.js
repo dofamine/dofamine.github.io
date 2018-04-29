@@ -54,7 +54,7 @@ let page = {
     },
 
     getCoords: function () {
-        Ajax.get("https://api.open-notify.org/iss-now.json")
+        Ajax.get("http://api.open-notify.org/iss-now.json")
             .then(response => {
                 let data = JSON.parse(response);
                 if (data.message !== "success") throw new Error("Error connection");
@@ -79,7 +79,7 @@ let page = {
     },
 
     getPeopleFromIss: function () {
-        Ajax.get("https://api.open-notify.org/astros.json")
+        Ajax.get("http://api.open-notify.org/astros.json")
             .then(response => {
                 let data = JSON.parse(response);
                 if (data.message !== "success") throw new Error("Error connection");
