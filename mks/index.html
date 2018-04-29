@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_OIY0L7BmHa-W8AAa1Sv29A-zDyHT92E"></script>
+<script type="text/javascript" src="./index.js"></script>
+<div class="container">
+    <div class="issInfo">
+        <div class="locAsStr">
+            <h3>ISS is now located at :</h3>
+            <p> longitude:
+                <span class="longitude"></span>,
+                latitude:
+                <span class="latitude"></span>
+            </p>
+        </div>
+        <div id="map"></div>
+    </div>
+    <div class="pplInfo">
+        <div class="time">
+            <h3>Current UTC time: <span class="curTime">18:40</span></h3>
+            <p class="curDate">Tue, 17 Apr 2018</p>
+        </div>
+        <div class="ppl">
+            <div class="total"><p>Total amount : <span class="total"></span> people on ISS</p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
